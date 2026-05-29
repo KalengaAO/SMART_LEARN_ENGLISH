@@ -1,0 +1,128 @@
+# Ancient Egypt - History Text
+
+<big><b>ANCIENT EGYPT</b></big>
+
+Ancient Egypt was one of the greatest civilizations in history.
+
+It developed near the Nile River in northeastern Africa more than 5,000 years ago.
+
+The Nile River was very important because it provided:
+
+• Water
+• Food
+• Transportation
+• Fertile land for farming
+
+---
+
+<big><b>The Pharaohs</b></big>
+
+The rulers of Egypt were called <b>pharaohs</b>.
+
+Egyptians believed that pharaohs were both political and religious leaders.
+
+Some famous pharaohs were:
+
+• Tutankhamun
+• Ramses II
+• Cleopatra
+
+Examples:
+• Pharaohs controlled the army and the government.
+• They also supervised the construction of temples and pyramids.
+
+---
+
+<big><b>The Pyramids</b></big>
+
+The pyramids were giant stone structures built as tombs for pharaohs.
+
+The most famous pyramids are located at Giza.
+
+The Great Pyramid of Giza is one of the Seven Wonders of the Ancient World.
+
+Examples:
+• Workers transported huge stones across the desert.
+• The pyramids represented power and religion.
+
+---
+
+<big><b>Egyptian Writing</b></big>
+
+Ancient Egyptians used a writing system called <b>hieroglyphics</b>.
+
+They wrote on papyrus using symbols and pictures.
+
+Examples:
+• Priests and scribes learned to read and write.
+• Hieroglyphics were used in temples and monuments.
+
+---
+
+<big><b>Religion and Beliefs</b></big>
+
+Egyptians believed in many gods.
+
+Some important gods were:
+
+• Ra – god of the sun
+• Anubis – god of mummification
+• Osiris – god of the afterlife
+
+They believed in life after death and preserved bodies through mummification.
+
+---
+
+<big><b>Daily Life in Egypt</b></big>
+
+Most Egyptians were farmers.
+
+They grew crops such as:
+
+• Wheat
+• Barley
+• Vegetables
+
+People also worked as:
+
+• Builders
+• Soldiers
+• Merchants
+• Artists
+
+Examples:
+• Children helped their families.
+• Markets were important centers of trade.
+
+---
+
+<big><b>Interesting Facts</b></big>
+
+• The Egyptian civilization lasted for thousands of years.
+• The Nile River floods helped agriculture.
+• Cats were considered sacred animals.
+• Egyptian medicine was advanced for its time.
+
+---
+
+<big><b>Practice Questions</b></big>
+
+1. What river was important to Ancient Egypt?
+2. What were Egyptian rulers called?
+3. Why were pyramids built?
+4. What writing system did Egyptians use?
+5. What did Egyptians believe about the afterlife?
+
+---
+
+<big><b>GTKMM Rendering Tip</b></big>
+
+This content can be rendered using:
+
+label.set_markup(content);
+
+Supported markup:
+• <b>bold text</b>
+• <big>large text</big>
+
+These tags are compatible with GTKMM and Pango markup.

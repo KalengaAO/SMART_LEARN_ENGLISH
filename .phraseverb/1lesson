@@ -1,0 +1,146 @@
+# Phrasal Verbs - English Grammar
+
+<big><b>PHRASAL VERBS</b></big>
+
+A <b>phrasal verb</b> is a combination of:
+
+• A verb
+• One or two particles (preposition or adverb)
+
+The meaning is often different from the original verb.
+
+Examples:
+• Wake up
+• Turn on
+• Give up
+• Look for
+
+---
+
+<big><b>Common Phrasal Verbs</b></big>
+
+1. Wake up
+   Meaning: stop sleeping
+   Example:
+   • I wake up at 6 AM.
+
+2. Turn on
+   Meaning: activate something
+   Example:
+   • Turn on the computer.
+
+3. Turn off
+   Meaning: deactivate something
+   Example:
+   • Please turn off the lights.
+
+4. Give up
+   Meaning: stop trying
+   Example:
+   • Never give up.
+
+5. Look for
+   Meaning: search
+   Example:
+   • I am looking for my keys.
+
+6. Pick up
+   Meaning: collect or lift
+   Example:
+   • She picked up the book.
+
+7. Sit down
+   Meaning: take a seat
+   Example:
+   • Please sit down.
+
+8. Get up
+   Meaning: leave the bed
+   Example:
+   • He gets up early.
+
+---
+
+<big><b>Separable Phrasal Verbs</b></big>
+
+Some phrasal verbs can be separated.
+
+Example:
+• Turn on the TV.
+• Turn the TV on.
+
+Both are correct.
+
+---
+
+<big><b>Inseparable Phrasal Verbs</b></big>
+
+Some phrasal verbs cannot be separated.
+
+Example:
+• I am looking for my phone.
+
+Incorrect:
+• I am looking my phone for.
+
+---
+
+<big><b>Phrasal Verbs with Pronouns</b></big>
+
+When using pronouns, the pronoun usually goes in the middle.
+
+Examples:
+• Turn it off.
+• Pick it up.
+• Put them away.
+
+---
+
+<big><b>Daily Life Phrasal Verbs</b></big>
+
+• Go out
+• Come in
+• Wake up
+• Sit down
+• Stand up
+• Put on
+• Take off
+
+Examples:
+• She put on her jacket.
+• They went out last night.
+• Take off your shoes.
+
+---
+
+<big><b>Practice Exercises</b></big>
+
+Complete the sentences:
+
+1. Please turn ____ the TV.
+2. I am looking ____ my backpack.
+3. He gave ____ smoking.
+4. She woke ____ late.
+5. Pick ____ the paper.
+
+Answers:
+
+1. off
+2. for
+3. up
+4. up
+5. up
+
+---
+
+<big><b>GTKMM Rendering Tip</b></big>
+
+This content can be rendered using:
+
+label.set_markup(content);
+
+Supported markup examples:
+• <b>bold text</b>
+• <big>large text</big>
+
+These tags are compatible with GTKMM and Pango markup.

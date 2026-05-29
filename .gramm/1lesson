@@ -1,0 +1,144 @@
+# Verb "To Be" - English Grammar
+
+<big><b>THE VERB "TO BE"</b></big>
+
+The verb <b>"to be"</b> is one of the most important verbs in English.
+It is used to talk about identity, age, location, feelings, and states.
+
+---
+
+<big><b>Present Tense</b></big>
+
+I am
+You are
+He is
+She is
+It is
+We are
+They are
+
+Examples:
+• I am a student.
+• She is happy.
+• They are at school.
+
+---
+
+<big><b>Negative Form</b></big>
+
+I am not
+You are not
+He is not
+She is not
+It is not
+We are not
+They are not
+
+Examples:
+• I am not tired.
+• He is not here.
+• We are not late.
+
+---
+
+<big><b>Questions</b></big>
+
+Am I?
+Are you?
+Is he?
+Is she?
+Is it?
+Are we?
+Are they?
+
+Examples:
+• Are you ready?
+• Is she your friend?
+• Am I correct?
+
+---
+
+<big><b>Short Answers</b></big>
+
+Yes, I am.
+No, I am not.
+
+Yes, you are.
+No, you are not.
+
+Yes, he is.
+No, he is not.
+
+Examples:
+• Are they students?
+Yes, they are.
+
+• Is he busy?
+No, he is not.
+
+---
+
+<big><b>Contractions</b></big>
+
+I am   -> I'm
+You are -> You're
+He is  -> He's
+She is -> She's
+It is  -> It's
+We are -> We're
+They are -> They're
+
+Examples:
+• I'm happy.
+• She's my teacher.
+• We're friends.
+
+---
+
+<big><b>Common Uses of "To Be"</b></big>
+
+1. Identity
+   • I am António.
+   • She is a doctor.
+
+2. Age
+   • He is 20 years old.
+
+3. Location
+   • They are in Luanda.
+
+4. Feelings
+   • We are excited.
+
+5. Description
+   • The car is blue.
+
+---
+
+<big><b>Practice Exercises</b></big>
+
+Complete the sentences:
+
+1. She ____ my sister.
+2. They ____ at home.
+3. I ____ not angry.
+4. ____ you a student?
+5. We ____ happy.
+
+Answers:
+
+1. is
+2. are
+3. am
+4. Are
+5. are
+
+---
+
+<big><b>GTKMM Rendering Tip</b></big>
+
+This content can be rendered with:
+
+label.set_markup(content);
+
+The tags <b><b></b></b> and <big><big></big></big> are compatible with Pango markup used by GTKMM.
