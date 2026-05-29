@@ -6,15 +6,12 @@
 
 class read_file {
 
-	public:
-		
-		read_file( void );
-		virtual ~read_file( void);
 
 	protected:
 		void	open( std::string const &file );
 		std::string	read( void ); 
 
 	private:
-		std::ifstream	_file;
+		ifstream	_file(".welcome/welcome");
+		read_file( void );
 };
