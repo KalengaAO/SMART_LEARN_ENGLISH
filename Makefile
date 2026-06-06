@@ -1,4 +1,4 @@
-NAME = slE
+NAME = sle
 
 CXX = c++
 

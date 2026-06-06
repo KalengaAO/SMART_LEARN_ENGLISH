@@ -14,8 +14,14 @@ void menu::read_f(void){
 	}
 }
 
-void menu::open_f( void ) {
-	read_file::open(".gramm/1lesson");
+std::string	menu::join_dir(std::string mod, std::string const &n_pag)
+{
+	mod += n_pag;
+	return mod;
+}
+
+void menu::open_f( std::string	&modulo) {
+	read_file::open(modulo);
 }
 
 const char *menu::end_of_file::what() const noexcept {
