@@ -16,15 +16,20 @@ janela::~janela( void ) {}
 void	janela::set_grid(void)
 {
 	Gtk::Label	label;
+	Gtk::Label	history;
 	Gtk::Button	gramm;
 	Gtk::Button	text;
 	Gtk::Button	phrase;
 	Gtk::Entry	n_pag;
 
 	label.set_markup("<b>MODULOS DE ENGLISH</b>");
+	history.set_markup("<b>Topicos relacionados:</b>");
 	gramm.set_label("Gramática");
 	text.set_label("Textos");
 	phrase.set_label("Frase verbos");
+
+	grid.set_row_spacing(5);
+	grid.set_column_spacing(5);
 
 	grid.attach(label, 0,0);
 	grid.attach(gramm, 0,2);
@@ -32,6 +37,7 @@ void	janela::set_grid(void)
 	grid.attach(n_pag,0,1,3);
 	grid.attach(text, 0,3);
 	grid.attach(phrase, 0,4);
+	grid.attach(history, 0,9);
 
 }
 

@@ -1,4 +1,0 @@
-.gramm 
-.phraseverb
-  .texto
-

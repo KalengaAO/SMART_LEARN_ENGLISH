@@ -8,6 +8,7 @@ std::string menu::read_f(void){
 
 	while (true){
 		line = read_file::read();
+		set_history(line);
 		if (line == "FNP")
 			throw file_not_open();
 		if (line == "EOF")
@@ -18,6 +19,12 @@ std::string menu::read_f(void){
 }
 
 menu::~menu(void ) {}
+
+
+void	menu::set_history(std::string line)
+{
+	for (size_t it = 0; 
+}
 
 std::string	menu::join_dir(std::string mod, std::string const &n_pag)
 {
