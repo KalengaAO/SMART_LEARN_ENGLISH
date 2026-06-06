@@ -23,7 +23,8 @@ void	janela::set_grid(void)
 	Gtk::Entry	n_pag;
 
 	label.set_markup("<b>MODULOS DE ENGLISH</b>");
-	history.set_markup("<b>Topicos relacionados:</b>");
+
+//	history.set_markup(hist);
 	gramm.set_label("Gramática");
 	text.set_label("Textos");
 	phrase.set_label("Frase verbos");
@@ -37,7 +38,7 @@ void	janela::set_grid(void)
 	grid.attach(n_pag,0,1,3);
 	grid.attach(text, 0,3);
 	grid.attach(phrase, 0,4);
-	grid.attach(history, 0,9);
+	grid.attach(history, 0,5);
 
 }
 
@@ -49,6 +50,7 @@ void	janela::set_reader( void )
 	scroll.set_child(label);
 	scroll.set_size_request(600, 300);
 	reader.append(scroll);
+	std::cout << first.get_history() << std::endl;
 
 	try{
 		std::string dir = this->first.join_dir(".texto/", "1lesson");
