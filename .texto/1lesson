@@ -1,4 +1,4 @@
-# Ancient Egypt - History Text
+<big><b>Ancient Egypt - History Text</b></big>
 
 <big><b>ANCIENT EGYPT</b></big>
 
@@ -13,7 +13,6 @@ The Nile River was very important because it provided:
 • Transportation
 • Fertile land for farming
 
----
 
 <big><b>The Pharaohs</b></big>
 
@@ -31,7 +30,6 @@ Examples:
 • Pharaohs controlled the army and the government.
 • They also supervised the construction of temples and pyramids.
 
----
 
 <big><b>The Pyramids</b></big>
 
@@ -45,7 +43,6 @@ Examples:
 • Workers transported huge stones across the desert.
 • The pyramids represented power and religion.
 
----
 
 <big><b>Egyptian Writing</b></big>
 
@@ -57,7 +54,6 @@ Examples:
 • Priests and scribes learned to read and write.
 • Hieroglyphics were used in temples and monuments.
 
----
 
 <big><b>Religion and Beliefs</b></big>
 
@@ -71,7 +67,6 @@ Some important gods were:
 
 They believed in life after death and preserved bodies through mummification.
 
----
 
 <big><b>Daily Life in Egypt</b></big>
 
@@ -94,8 +89,6 @@ Examples:
 • Children helped their families.
 • Markets were important centers of trade.
 
----
-
 <big><b>Interesting Facts</b></big>
 
 • The Egyptian civilization lasted for thousands of years.
@@ -103,26 +96,10 @@ Examples:
 • Cats were considered sacred animals.
 • Egyptian medicine was advanced for its time.
 
----
-
 <big><b>Practice Questions</b></big>
 
-1. What river was important to Ancient Egypt?
-2. What were Egyptian rulers called?
-3. Why were pyramids built?
-4. What writing system did Egyptians use?
-5. What did Egyptians believe about the afterlife?
-
----
-
-<big><b>GTKMM Rendering Tip</b></big>
-
-This content can be rendered using:
-
-label.set_markup(content);
-
-Supported markup:
-• <b>bold text</b>
-• <big>large text</big>
-
-These tags are compatible with GTKMM and Pango markup.
+<b>1.</b> What river was important to Ancient Egypt?
+<b>2.</b> What were Egyptian rulers called?
+<b>3.</b> Why were pyramids built?
+<b>4.</b> What writing system did Egyptians use?
+<b>5.</b> What did Egyptians believe about the afterlife?

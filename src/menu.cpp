@@ -2,17 +2,22 @@
 
 menu::menu(void) {}
 
-void menu::read_f(void){
+std::string menu::read_f(void){
 	std::string	line;
-	for(size_t n_read = 15; n_read > 0; n_read--){
+	std::string	full_line;
+
+	while (true){
 		line = read_file::read();
 		if (line == "FNP")
 			throw file_not_open();
 		if (line == "EOF")
-			throw end_of_file();
-		std::cout << line << std::endl;
+			break ;
+		full_line += "\n" + line;
 	}
+	return full_line;
 }
+
+menu::~menu(void ) {}
 
 std::string	menu::join_dir(std::string mod, std::string const &n_pag)
 {
