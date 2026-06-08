@@ -20,14 +20,14 @@ std::string menu::read_f(void){
 
 menu::~menu(void ) {}
 
-std::string	menu::get_history( void ) const {
-	return this->history;
+std::string	&menu::get_history( void ){
+	return history;
 }
 
 void	menu::set_history(std::string line)
 {
 	if (!std::strncmp(line.c_str(), "<big>", 5))
-		this->history.append("\n" + line);
+		this->history += ("\n" + line);
 }
 
 std::string	menu::join_dir(std::string mod, std::string const &n_pag)

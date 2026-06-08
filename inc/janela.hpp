@@ -3,7 +3,10 @@
 #include <gtkmm.h>
 #include "../inc/menu.hpp"
 
-class janela : public Gtk::Window , public menu
+class menu;
+
+
+class janela : public Gtk::Window
 {
 
 	public:

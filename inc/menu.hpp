@@ -17,7 +17,7 @@ class menu : public read_file
 		std::string read_f( void );
 		void open_f( std::string &mod );
 		void set_history(std::string line);
-		std::vector<std::string>	get_history( void ) const;
+		std::string	&get_history(void );
 		std::string	join_dir(std::string mod, std::string const &n_pag);
 
 		class end_of_file : public std::exception {
@@ -28,6 +28,7 @@ class menu : public read_file
 			const char *what() const noexcept;
 		};	
 
-		std::vector<std::string>	history;
+		protected:
+			std::string	history;
 
 };
