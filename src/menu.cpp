@@ -21,6 +21,8 @@ std::string menu::read_f(void){
 menu::~menu(void ) {}
 
 void menu::open_gramm(std::string const &lesson) {
+	if (lesson.size() == 0)
+		open_f(join_dir(".gramm/", "1lesson"));
 	open_f(join_dir(".gramm/", lesson));
 }
 

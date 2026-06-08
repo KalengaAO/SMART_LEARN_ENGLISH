@@ -33,25 +33,26 @@ void	janela::set_grid(void)
 	grid.attach(hist_title, 0,5);
 	grid.attach(history, 0,6);
 
-	gramm.signal_clicked().connect([](){std::cout << "clicado" << std::endl;});
+	gramm.signal_clicked().connect(sigc::mem_fun(*this, &janela::try_gramm));
+}
+
+void janela::try_gramm( void ) {
+	first.open_gramm("1lesson");
+	std::cout << this->first.read_f() << std::endl;
+	r_label.set_markup(this->first.read_f());
 }
 
 void	janela::set_reader( void )
 {
-	Gtk::Label	label;
-	Gtk::ScrolledWindow	scroll;
-	Gtk::Button	next;
-
-	scroll.set_child(label);
+	scroll.set_child(r_label);
 	scroll.set_size_request(600, 300);
-	next.set_label("next lesson");
 	reader.append(scroll);
 
 	try{
 		std::string dir = this->first.join_dir(".welcome/", "welcome");
 		this->first.open_f(dir);
-		label.set_markup(this->first.read_f());
+		r_label.set_markup(this->first.read_f());
 	}catch (std::exception &e){
-		label.set_text(e.what());
+		r_label.set_text(e.what());
 	}
 }

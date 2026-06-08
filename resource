@@ -17,3 +17,6 @@ Se não escolher o numero de pagina por padrão abra a primeira pagina.
 HISTORY
 o history será armazenado em um vector history;
 Usa a memoria heap será melhor para não perdemos a referencia
+
+
+precisar ler o ficheiro a cada eventos:: ERROR

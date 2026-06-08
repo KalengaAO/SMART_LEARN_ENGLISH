@@ -13,6 +13,8 @@ class janela : public Gtk::Window
 	public:
 		janela( void );
 		~janela( void );
+
+		void try_gramm(void);
 	
 	protected:
 		void	set_grid( void );
@@ -30,6 +32,9 @@ class janela : public Gtk::Window
 		Gtk::Label	label;
 		Gtk::Label	history;
 		Gtk::Label	hist_title;
+
+		Gtk::Label	r_label;
+		Gtk::ScrolledWindow	scroll;
 
 		menu 	first;
 };
