@@ -15,33 +15,25 @@ janela::~janela( void ) {}
 
 void	janela::set_grid(void)
 {
-	Gtk::Label	label;
-	Gtk::Label	history;
-	Gtk::Label	hist_title;
-	Gtk::Button	gramm;
-	Gtk::Button	text;
-	Gtk::Button	phrase;
-	Gtk::Entry	n_pag;
-
-	label.set_markup("<b>MODULOS DE ENGLISH</b>");
-
-	hist_title.set_markup("<b>Topicos Relacionados</b>");
+	label.set_markup("<big><b>\nEnglish modules</b></big>");
+	hist_title.set_markup("<b>\nRelated topic</b>");
+	lesson.set_placeholder_text("ex: 1lesson (max: 50lesson)");
 	history.set_markup(first.get_history());
-	gramm.set_label("Gramática");
-	text.set_label("Textos");
-	phrase.set_label("Frase verbos");
+	gramm.set_label("Grammar");
+	text.set_label("Texts");
+	phrase.set_label("Phrase verb");
+
 	grid.set_row_spacing(5);
 	grid.set_column_spacing(5);
-
 	grid.attach(label, 0,0);
+	grid.attach(lesson,0,1);
 	grid.attach(gramm, 0,2);
-	n_pag.set_placeholder_text("ex: 1lesson (max: 50lesson)");
-	grid.attach(n_pag,0,1);
-	grid.attach(text, 0,3);
-	grid.attach(phrase, 0,4);
+	grid.attach(phrase, 0,3);
+	grid.attach(text, 0,4);
 	grid.attach(hist_title, 0,5);
 	grid.attach(history, 0,6);
 
+	gramm.signal_clicked().connect([](){std::cout << "clicado" << std::endl;});
 }
 
 void	janela::set_reader( void )
@@ -56,7 +48,7 @@ void	janela::set_reader( void )
 	reader.append(scroll);
 
 	try{
-		std::string dir = this->first.join_dir(".texto/", "1lesson");
+		std::string dir = this->first.join_dir(".welcome/", "welcome");
 		this->first.open_f(dir);
 		label.set_markup(this->first.read_f());
 	}catch (std::exception &e){

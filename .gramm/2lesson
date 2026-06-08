@@ -1,0 +1,52 @@
+label.set_markup(
+"<big><b>Countable and Uncountable Nouns</b></big>\n\n"
+
+"<b>1. Countable Nouns</b>\n"
+"Countable nouns are things that can be counted individually.\n"
+"They have singular and plural forms.\n\n"
+
+"<b>Examples:</b>\n"
+"• one book → two books\n"
+"• one apple → three apples\n"
+"• one student → ten students\n\n"
+
+"<b>We use:</b>\n"
+"• a / an\n"
+"• many\n"
+"• few\n"
+"• several\n\n"
+
+"<b>Examples in sentences:</b>\n"
+"• I have <b>a book</b>.\n"
+"• She bought <b>many apples</b>.\n"
+"• There are <b>several students</b> in the classroom.\n\n"
+
+"<b>2. Uncountable Nouns</b>\n"
+"Uncountable nouns are things that cannot be counted individually.\n"
+"They usually do not have a plural form.\n\n"
+
+"<b>Examples:</b>\n"
+"• water\n"
+"• milk\n"
+"• sugar\n"
+"• information\n"
+"• money\n\n"
+
+"<b>We use:</b>\n"
+"• much\n"
+"• little\n"
+"• a lot of\n"
+"• some\n\n"
+
+"<b>Examples in sentences:</b>\n"
+"• There is <b>some water</b> in the bottle.\n"
+"• We need <b>much information</b>.\n"
+"• She has <b>a lot of money</b>.\n\n"
+
+"<b>3. Quick Comparison</b>\n"
+"Countable  → many books, few cars\n"
+"Uncountable → much water, little sugar\n\n"
+
+"<b>Remember:</b>\n"
+"Use <b>many</b> with countable nouns and <b>much</b> with uncountable nouns.\n"
+);

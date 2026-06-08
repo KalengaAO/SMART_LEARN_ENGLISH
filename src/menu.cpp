@@ -20,6 +20,10 @@ std::string menu::read_f(void){
 
 menu::~menu(void ) {}
 
+void menu::open_gramm(std::string const &lesson) {
+	open_f(join_dir(".gramm/", lesson));
+}
+
 std::string	&menu::get_history( void ){
 	return history;
 }
@@ -36,7 +40,7 @@ std::string	menu::join_dir(std::string mod, std::string const &n_pag)
 	return mod;
 }
 
-void menu::open_f( std::string	&modulo) {
+void menu::open_f( std::string	const &modulo) {
 	read_file::open(modulo);
 }
 

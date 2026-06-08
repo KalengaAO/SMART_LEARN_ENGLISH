@@ -15,8 +15,9 @@ class menu : public read_file
 		virtual ~menu( void );
 
 		std::string read_f( void );
-		void open_f( std::string &mod );
+		void open_f( std::string const &mod );
 		void set_history(std::string line);
+		void open_gramm(std::string const &lesson);
 		std::string	&get_history(void );
 		std::string	join_dir(std::string mod, std::string const &n_pag);
 

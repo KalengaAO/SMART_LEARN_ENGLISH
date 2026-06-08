@@ -1,6 +1,7 @@
 #pragma once
 
 #include <gtkmm.h>
+#include <string>
 #include "../inc/menu.hpp"
 
 class menu;
@@ -12,8 +13,8 @@ class janela : public Gtk::Window
 	public:
 		janela( void );
 		~janela( void );
-
-	private:
+	
+	protected:
 		void	set_grid( void );
 		void	set_reader( void );
 		void	set_char_IA( void );
@@ -21,5 +22,14 @@ class janela : public Gtk::Window
 		Gtk::Box	reader;
 		Gtk::Grid	grid;
 		Gtk::Box	chat_IA;
+
+		Gtk::Entry	lesson;
+		Gtk::Button	gramm;
+		Gtk::Button	text;
+		Gtk::Button	phrase;
+		Gtk::Label	label;
+		Gtk::Label	history;
+		Gtk::Label	hist_title;
+
 		menu 	first;
 };
