@@ -36,7 +36,7 @@ void	janela::set_grid(void)
 	grid.attach(label, 0,0);
 	grid.attach(gramm, 0,2);
 	n_pag.set_placeholder_text("ex: 1lesson (max: 50lesson)");
-	grid.attach(n_pag,0,1,3);
+	grid.attach(n_pag,0,1);
 	grid.attach(text, 0,3);
 	grid.attach(phrase, 0,4);
 	grid.attach(hist_title, 0,5);
@@ -48,9 +48,11 @@ void	janela::set_reader( void )
 {
 	Gtk::Label	label;
 	Gtk::ScrolledWindow	scroll;
+	Gtk::Button	next;
 
 	scroll.set_child(label);
 	scroll.set_size_request(600, 300);
+	next.set_label("next lesson");
 	reader.append(scroll);
 
 	try{
