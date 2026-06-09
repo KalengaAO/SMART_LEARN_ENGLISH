@@ -37,9 +37,13 @@ void	janela::set_grid(void)
 }
 
 void janela::try_gramm( void ) {
-	first.open_gramm("1lesson");
-	std::cout << this->first.read_f() << std::endl;
-	r_label.set_markup(this->first.read_f());
+	try{
+		first.open_gramm("1lesson");
+		r_label.set_markup(this->first.read_f());
+		history.set_markup(first.get_history());
+	} catch( std::exception &e){
+		r_label.set_text(e.what());
+	}
 }
 
 void	janela::set_reader( void )

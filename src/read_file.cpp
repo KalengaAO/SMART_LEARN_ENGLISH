@@ -5,7 +5,7 @@ read_file::read_file(void) {}
 read_file::~read_file(void) {}
 
 void read_file::open( std::string const &file ) {
-	if (!_file.is_open())
+	if (_file.is_open())
 		_file.close();
 	_file.open(file);
 }
