@@ -1,5 +1,3 @@
-# Phrasal Verbs - English Grammar
-
 <big><b>PHRASAL VERBS</b></big>
 
 A <b>phrasal verb</b> is a combination of:
@@ -15,7 +13,6 @@ Examples:
 • Give up
 • Look for
 
----
 
 <big><b>Common Phrasal Verbs</b></big>
 
@@ -59,7 +56,6 @@ Examples:
    Example:
    • He gets up early.
 
----
 
 <big><b>Separable Phrasal Verbs</b></big>
 
@@ -71,7 +67,6 @@ Example:
 
 Both are correct.
 
----
 
 <big><b>Inseparable Phrasal Verbs</b></big>
 
@@ -83,7 +78,6 @@ Example:
 Incorrect:
 • I am looking my phone for.
 
----
 
 <big><b>Phrasal Verbs with Pronouns</b></big>
 
@@ -94,7 +88,6 @@ Examples:
 • Pick it up.
 • Put them away.
 
----
 
 <big><b>Daily Life Phrasal Verbs</b></big>
 
@@ -110,8 +103,6 @@ Examples:
 • She put on her jacket.
 • They went out last night.
 • Take off your shoes.
-
----
 
 <big><b>Practice Exercises</b></big>
 
@@ -130,17 +121,3 @@ Answers:
 3. up
 4. up
 5. up
-
----
-
-<big><b>GTKMM Rendering Tip</b></big>
-
-This content can be rendered using:
-
-label.set_markup(content);
-
-Supported markup examples:
-• <b>bold text</b>
-• <big>large text</big>
-
-These tags are compatible with GTKMM and Pango markup.

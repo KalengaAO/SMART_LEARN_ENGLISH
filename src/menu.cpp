@@ -21,7 +21,27 @@ std::string menu::read_f(void){
 menu::~menu(void ) {}
 
 void menu::open_gramm(std::string const &lesson) {
+	if (lesson.size() == 0){
+		open_f(join_dir(".gramm/", "1lesson"));
+		return ;
+	}
 	open_f(join_dir(".gramm/", lesson));
+}
+
+void menu::open_phrase(std::string const &lesson) {
+	if (lesson.size() == 0){
+		open_f(join_dir(".phraseverb/", "1lesson"));
+		return ;
+	}
+	open_f(join_dir(".phraseverb/", lesson));
+}
+
+void menu::open_text(std::string const &lesson) {
+	if (lesson.size() == 0){
+		open_f(join_dir(".texto/", "1lesson"));
+		return ;
+	}
+	open_f(join_dir(".texto/", lesson));
 }
 
 std::string	&menu::get_history( void ){

@@ -15,6 +15,8 @@ class janela : public Gtk::Window
 		~janela( void );
 
 		void try_gramm(void);
+		void try_phrase(void);
+		void try_text(void);
 	
 	protected:
 		void	set_grid( void );

@@ -18,7 +18,6 @@ void	janela::set_grid(void)
 	label.set_markup("<big><b>\nEnglish modules</b></big>");
 	hist_title.set_markup("<b>\nRelated topic</b>");
 	lesson.set_placeholder_text("ex: 1lesson (max: 50lesson)");
-	history.set_markup(first.get_history());
 	gramm.set_label("Grammar");
 	text.set_label("Texts");
 	phrase.set_label("Phrase verb");
@@ -34,13 +33,32 @@ void	janela::set_grid(void)
 	grid.attach(history, 0,6);
 
 	gramm.signal_clicked().connect(sigc::mem_fun(*this, &janela::try_gramm));
+	phrase.signal_clicked().connect(sigc::mem_fun(*this, &janela::try_phrase));
+	text.signal_clicked().connect(sigc::mem_fun(*this, &janela::try_text));
 }
 
 void janela::try_gramm( void ) {
 	try{
-		first.open_gramm("1lesson");
+		first.open_gramm(lesson.get_text());
 		r_label.set_markup(this->first.read_f());
-		history.set_markup(first.get_history());
+	} catch( std::exception &e){
+		r_label.set_text(e.what());
+	}
+}
+
+void janela::try_phrase( void ) {
+	try{
+		first.open_phrase(lesson.get_text());
+		r_label.set_markup(this->first.read_f());
+	} catch( std::exception &e){
+		r_label.set_text(e.what());
+	}
+}
+
+void janela::try_text( void ) {
+	try{
+		first.open_text(lesson.get_text());
+		r_label.set_markup(this->first.read_f());
 	} catch( std::exception &e){
 		r_label.set_text(e.what());
 	}

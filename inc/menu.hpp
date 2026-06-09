@@ -18,6 +18,8 @@ class menu : public read_file
 		void open_f( std::string const &mod );
 		void set_history(std::string line);
 		void open_gramm(std::string const &lesson);
+		void open_text(std::string const &lesson);
+		void open_phrase(std::string const &lesson);
 		std::string	&get_history(void );
 		std::string	join_dir(std::string mod, std::string const &n_pag);
 
