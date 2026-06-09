@@ -21,6 +21,7 @@ class menu : public read_file
 		void open_text(std::string const &lesson);
 		void open_phrase(std::string const &lesson);
 		std::string	&get_history(void );
+		void reset_history( void );
 		std::string	join_dir(std::string mod, std::string const &n_pag);
 
 		class end_of_file : public std::exception {

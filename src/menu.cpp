@@ -48,6 +48,10 @@ std::string	&menu::get_history( void ){
 	return history;
 }
 
+void	menu::reset_history( void ){
+	this->history = "";
+}
+
 void	menu::set_history(std::string line)
 {
 	if (!std::strncmp(line.c_str(), "<big>", 5) && (line.size() <= 40))

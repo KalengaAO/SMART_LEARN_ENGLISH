@@ -43,6 +43,8 @@ void janela::try_gramm( void ) {
 	try{
 		first.open_gramm(lesson.get_text());
 		r_label.set_markup(this->first.read_f());
+		history.set_markup(first.get_history());
+		first.reset_history();
 	} catch( std::exception &e){
 		r_label.set_text(e.what());
 	}
@@ -52,6 +54,8 @@ void janela::try_phrase( void ) {
 	try{
 		first.open_phrase(lesson.get_text());
 		r_label.set_markup(this->first.read_f());
+		history.set_markup(first.get_history());
+		first.reset_history();
 	} catch( std::exception &e){
 		r_label.set_text(e.what());
 	}
@@ -61,6 +65,8 @@ void janela::try_text( void ) {
 	try{
 		first.open_text(lesson.get_text());
 		r_label.set_markup(this->first.read_f());
+		history.set_markup(first.get_history());
+		first.reset_history();
 	} catch( std::exception &e){
 		r_label.set_text(e.what());
 	}
@@ -88,15 +94,19 @@ void	janela::send( void ){
 
 void	janela::env_send( void )
 {
-	std::string two("All responses must be displayed in gtkmm4");
+	std::string two("(All responses must be in gtkmm formmat.ex: <b>only format not codig</b>)");
 	try{
 		std::string prom = prompt.get_text();
 		prom += two;
 
 		prompt.set_text("");
 		response.set_text("");
+		send_prompt.set_sensitive(false);
+		send_prompt.set_label("send disabled");
 		std::string	res = requisition(prom);
 		response.set_markup(res);
+		send_prompt.set_sensitive(true);
+		send_prompt.set_label("send actived");
 	} catch( std::exception &e){
 		response.set_text(e.what());
 	}
@@ -108,10 +118,10 @@ void	janela::set_char_IA( void )
 	prompt.set_placeholder_text("write here only english topics");
 	scroll.set_child(response);
 	send_prompt.set_label("send");
-	scroll.set_size_request(450, 680);
+	scroll.set_size_request(430, 680);
 
 	chat_IA.append(scroll);
-	chat_IA.append(send_prompt);
 	chat_IA.append(prompt);
+	chat_IA.append(send_prompt);
 	send_prompt.signal_clicked().connect(sigc::mem_fun(*this, &janela::send));
 }
