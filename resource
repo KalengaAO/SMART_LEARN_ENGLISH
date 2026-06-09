@@ -20,3 +20,6 @@ Usa a memoria heap será melhor para não perdemos a referencia
 
 
 precisar ler o ficheiro a cada eventos:: ERROR
+
+export OPENROUTER_API_KEY="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"
+

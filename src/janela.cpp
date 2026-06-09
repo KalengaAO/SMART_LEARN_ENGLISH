@@ -1,14 +1,16 @@
 #include "../inc/janela.hpp"
 
-janela::janela( void ) : box_main(Gtk::Orientation::HORIZONTAL) {
+janela::janela( void ) : box_main(Gtk::Orientation::HORIZONTAL), 
+		chat_IA(Gtk::Orientation::VERTICAL) {
 	set_title("SMART LEARN ENGLISH");
 	set_default_size(1200, 800);
 	this->set_reader();
 	this->set_grid();
-//	this->set_char_IA();
+	this->set_char_IA();
 	set_child(box_main);
 	box_main.append(grid);
 	box_main.append(reader);
+	box_main.append(chat_IA);
 }
 
 janela::~janela( void ) {}
@@ -77,4 +79,39 @@ void	janela::set_reader( void )
 	}catch (std::exception &e){
 		r_label.set_text(e.what());
 	}
+}
+
+
+void	janela::send( void ){
+	t_send =  std::jthread([this](){ env_send();});
+}
+
+void	janela::env_send( void )
+{
+	std::string two("All responses must be displayed in gtkmm4");
+	try{
+		std::string prom = prompt.get_text();
+		prom += two;
+
+		prompt.set_text("");
+		response.set_text("");
+		std::string	res = requisition(prom);
+		response.set_markup(res);
+	} catch( std::exception &e){
+		response.set_text(e.what());
+	}
+}
+
+void	janela::set_char_IA( void )
+{
+	Gtk::ScrolledWindow scroll;
+	prompt.set_placeholder_text("write here only english topics");
+	scroll.set_child(response);
+	send_prompt.set_label("send");
+	scroll.set_size_request(450, 680);
+
+	chat_IA.append(scroll);
+	chat_IA.append(send_prompt);
+	chat_IA.append(prompt);
+	send_prompt.signal_clicked().connect(sigc::mem_fun(*this, &janela::send));
 }

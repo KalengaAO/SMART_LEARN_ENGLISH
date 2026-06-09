@@ -2,7 +2,7 @@ NAME = sle
 
 CXX = c++
 
-CXXFLAGS = -Wall -Wextra -Werror -std=c++17
+CXXFLAGS = -Wall -Wextra -Werror -std=c++20
 CXXFLAGS += $(shell pkg-config --cflags gtkmm-4.0)
 
 LDLIBS = $(shell pkg-config --libs gtkmm-4.0) -lcurl
@@ -15,7 +15,8 @@ SRC = \
 	src/main.cpp \
 	src/janela.cpp \
 	src/menu.cpp \
-	src/read_file.cpp
+	src/read_file.cpp \
+	src/curl.cpp
 
 OBJ = $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 
