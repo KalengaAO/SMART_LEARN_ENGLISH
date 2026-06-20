@@ -1,5 +1,5 @@
 # SMART_LEARN_ENGLISH
-Smart learn english é uma aplicação desktop constituido por três modulos de English com um chat de Inteligência Artificial, que certamente poderia ser desenvolvida como uma aplicação web, porém abracei o desafio de fazer - lô em C++, desde a requisição a serilização e deserialização do json, e com uma interface grafica baseada na mesma biblioteca gtkmm utilizada pelo Gnome (linuz) . A ideia de uma aplicação desktop foi fortemente motivado pelo facil acesso que qualquer um que quisesse ter a aplicação pode simplemente baixar e instalar pelo link: git@github.com:KalengaAO/SMART_LEARN_ENGLISH.git 
+Smart learn english é uma aplicação desktop constituido por três modulos de English com um chat de Inteligência Artificial, que certamente poderia ser desenvolvida como uma aplicação web, porém abracei o desafio de fazer - lô em C++, desde a requisição a serilização e deserialização do json, e com uma interface grafica baseada na mesma biblioteca gtkmm utilizada pelo Gnome (linux) . A ideia de uma aplicação desktop foi fortemente motivado pelo facil acesso que qualquer um que quisesse ter a aplicação pode simplemente baixar e instalar pelo link: git@github.com:KalengaAO/SMART_LEARN_ENGLISH.git 
 
 ## Dependências
 
